@@ -1,0 +1,31 @@
+@host=https://workout.jordywijman.nl
+
+### Register
+# @name RegisterRequest
+POST {{host}}/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@gmail.com",
+  "password": "myCoolpassword"
+}
+
+### Login
+# @name LoginRequest
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "john.doe@gmail.com",
+  "password": "myCoolpassword"
+}
+
+### Extract token from response
+@jwtToken={{LoginRequest.response.body.token}}
+
+### Get Dinners
+GET {{host}}/dinners
+Content-Type: application/json
+Authorization: Bearer {{jwtToken}}
