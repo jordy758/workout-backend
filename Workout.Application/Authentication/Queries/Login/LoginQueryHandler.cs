@@ -4,7 +4,6 @@ using Workout.Application.Authentication.Common;
 using Workout.Application.Common.Interfaces.Authentication;
 using Workout.Application.Common.Interfaces.Persistence;
 using Workout.Domain.Common.Errors;
-using Workout.Domain.User;
 
 namespace Workout.Application.Authentication.Queries.Login;
 
@@ -21,7 +20,7 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, ErrorOr<Authenticat
 
     public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery request, CancellationToken cancellationToken)
     {
-        if (_userRepository.GetUserByEmail(request.Email) is not User user)
+        if (await _userRepository.GetUserByEmailAsync(request.Email) is not { } user)
         {
             return Errors.Authentication.InvalidCredentials;
         }

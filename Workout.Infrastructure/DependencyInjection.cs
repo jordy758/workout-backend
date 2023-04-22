@@ -41,7 +41,10 @@ public static class DependencyInjection
         services.AddHealthChecks()
             .AddDbContextCheck<WorkoutDbContext>();
 
-        return services.AddScoped<IUserRepository, UserRepository>();
+        return services
+            .AddScoped<IUserRepository, UserRepository>()
+            .AddScoped<IWorkoutPlanRepository, WorkoutPlanRepository>()
+            .AddScoped<IExerciseRepository, ExerciseRepository>();
     }
     
     private static IServiceCollection AddAuth(this IServiceCollection services, IConfiguration configuration)

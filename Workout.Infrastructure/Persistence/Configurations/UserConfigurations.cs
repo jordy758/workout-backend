@@ -1,7 +1,7 @@
-using Workout.Domain.User;
-using Workout.Domain.User.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Workout.Domain.UserAggregate;
+using Workout.Domain.UserAggregate.ValueObjects;
 
 namespace Workout.Infrastructure.Persistence.Configurations;
 

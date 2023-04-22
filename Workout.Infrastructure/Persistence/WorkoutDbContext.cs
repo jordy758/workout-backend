@@ -1,8 +1,8 @@
 using System.Reflection;
-using Workout.Domain.User;
 using Microsoft.EntityFrameworkCore;
-using Workout.Domain.Exercise;
-using Workout.Domain.WorkoutPlan;
+using Workout.Domain.ExerciseAggregate;
+using Workout.Domain.UserAggregate;
+using Workout.Domain.WorkoutPlanAggregate;
 
 namespace Workout.Infrastructure.Persistence;
 

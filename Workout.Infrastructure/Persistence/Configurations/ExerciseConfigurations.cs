@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Workout.Domain.Exercise;
-using Workout.Domain.Exercise.ValueObjects;
+using Workout.Domain.ExerciseAggregate;
+using Workout.Domain.ExerciseAggregate.ValueObjects;
 
 namespace Workout.Infrastructure.Persistence.Configurations;
 
@@ -34,7 +34,7 @@ public class ExerciseConfigurations : IEntityTypeConfiguration<Exercise>
         builder.Property(e => e.TargetedMuscles)
             .HasConversion(
                 value => string.Join(',', value),
-                value => value.Split(',', StringSplitOptions.RemoveEmptyEntries),
+                value => value.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList(),
                 new ValueComparer<IReadOnlyList<string>>(
                     (c1, c2) => (c1 == null && c2 == null) || (c1 != null && c2 != null && c1.SequenceEqual(c2)),
                     c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),

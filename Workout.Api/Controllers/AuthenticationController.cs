@@ -1,11 +1,11 @@
 using Workout.Application.Authentication.Commands.Register;
-using Workout.Application.Authentication.Common;
 using Workout.Application.Authentication.Queries.Login;
 using Workout.Contracts.Authentication;
 using Workout.Domain.Common.Errors;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Workout.Api.Extensions;
 
 namespace Workout.Api.Controllers;
 
@@ -34,7 +34,7 @@ public class AuthenticationController : ApiController
         }
 
         return authResponse.Match(
-            authResult => Ok(MapToAuthenticationResponse(authResult)),
+            authResult => Ok(authResult.MapToResponse()),
             errors => Problem(errors));
     }
 
@@ -49,17 +49,8 @@ public class AuthenticationController : ApiController
         var authResponse = await _mediator.Send(command);
 
         return authResponse.Match(
-            authResult => Ok(MapToAuthenticationResponse(authResult)),
+            authResult => Ok(authResult.MapToResponse()),
             errors => Problem(errors));
     }
     
-    private AuthenticationResponse MapToAuthenticationResponse(AuthenticationResult response)
-    {
-        return new AuthenticationResponse(
-            response.User.Id.Value,
-            response.User.FirstName,
-            response.User.LastName,
-            response.User.Email,
-            response.Token);
-    }
 }

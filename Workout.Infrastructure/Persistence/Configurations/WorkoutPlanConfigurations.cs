@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Workout.Domain.Exercise.ValueObjects;
-using Workout.Domain.WorkoutPlan;
-using Workout.Domain.WorkoutPlan.ValueObjects;
+using Workout.Domain.ExerciseAggregate.ValueObjects;
+using Workout.Domain.WorkoutPlanAggregate;
+using Workout.Domain.WorkoutPlanAggregate.ValueObjects;
 
 namespace Workout.Infrastructure.Persistence.Configurations;
 
@@ -54,18 +54,18 @@ public class WorkoutPlanConfigurations : IEntityTypeConfiguration<WorkoutPlan>
             sb.Property(s => s.Description)
                 .HasMaxLength(350);
 
-            sb.OwnsMany(s => s.Exercises, eb =>
+            sb.OwnsMany(s => s.ExerciseInstructions, eb =>
             {
-                eb.ToTable("WorkoutPlanExercises");
+                eb.ToTable("ExerciseInstructions");
 
                 eb.WithOwner().HasForeignKey("WorkoutSectionId", "WorkoutId");
 
                 eb.Property(e => e.Id)
-                    .HasColumnName("WorkoutPlanExerciseId")
+                    .HasColumnName("ExerciseInstructionId")
                     .ValueGeneratedNever()
                     .HasConversion(
                         id => id.Value,
-                        value => WorkoutPlanExerciseId.Create(value));
+                        value => ExerciseInstructionId.Create(value));
                 
                 eb.Property(e => e.ExerciseId)
                     .HasConversion(
@@ -79,8 +79,8 @@ public class WorkoutPlanConfigurations : IEntityTypeConfiguration<WorkoutPlan>
                 eb.Property(e => e.Reps);
             });
             
-            sb.Navigation(s => s.Exercises).Metadata.SetField("_exercises");
-            sb.Navigation(s => s.Exercises).UsePropertyAccessMode(PropertyAccessMode.Field);
+            sb.Navigation(s => s.ExerciseInstructions).Metadata.SetField("_exerciseInstructions");
+            sb.Navigation(s => s.ExerciseInstructions).UsePropertyAccessMode(PropertyAccessMode.Field);
         });
         
         builder.Metadata.FindNavigation(nameof(WorkoutPlan.Sections))!.SetPropertyAccessMode(PropertyAccessMode.Field);

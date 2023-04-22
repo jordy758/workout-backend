@@ -1,4 +1,4 @@
-using Workout.Domain.User;
+using Workout.Domain.UserAggregate;
 
 namespace Workout.Application.Common.Interfaces.Authentication;
 
