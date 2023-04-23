@@ -6,34 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f197b0c-b70e-405f-aefe-d0208d7390d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Workout.Api/Controllers/ExercisesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Api/Extensions/ExerciseExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Api/Extensions/WorkoutPlanExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Commands/CreateExerciseCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Commands/CreateExerciseCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Queries/GetExercises/GetExercisesQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Queries/GetExercises/GetWorkoutPlansQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Extensions/ExerciseExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Queries/GetWorkoutPlans/GetWorkoutPlansQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Contracts/Exercises/CreateExerciseRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlans/CreateWorkoutPlanRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlans/WorkoutPlanResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Requests/Workout/GetWorkoutPlans.http" beforeDir="false" afterPath="$PROJECT_DIR$/Requests/Workout/GetWorkoutPlans.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Api/Controllers/ExercisesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Api/Controllers/ExercisesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Workout.Api/Controllers/WorkoutPlansController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Api/Controllers/WorkoutPlansController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Api/Extensions/WorkoutPlanMapper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IExerciseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IExerciseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/Extensions/WorkoutPlanExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Extensions/WorkoutPlanExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Common/WorkoutPlanResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Common/WorkoutPlanResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Queries/GetWorkoutPlans/GetWorkoutPlansQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Queries/GetWorkoutPlans/GetWorkoutPlansQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Queries/GetWorkoutPlans/GetWorkoutPlansQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Contracts/Exercise/ExerciseResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Contracts/Exercises/ExerciseResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/ExerciseInstructionResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/WorkoutPlanResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/WorkoutPlanSectionResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/ExerciseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/ExerciseRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7415982338a3ccbd2a7a4eb483af627bda727e356b86bb32c5d4f6998f9c/IRequestHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/96a64ee935c8d66ab15c46c77c4f28623a76c92da2f49eac2825fa8d188f/UrlHelperExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -119,7 +96,7 @@
       <updated>1682187165600</updated>
       <workItem from="1682187171136" duration="7277000" />
       <workItem from="1682195473330" duration="3670000" />
-      <workItem from="1682281259183" duration="3451000" />
+      <workItem from="1682281259183" duration="4698000" />
     </task>
     <servers />
   </component>

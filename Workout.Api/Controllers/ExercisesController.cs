@@ -24,14 +24,28 @@ public class ExercisesController : ApiController
         var exercisesResult = await _sender.Send(new GetExercisesQuery());
         return Ok(exercisesResult.Select(exerciseResult => exerciseResult.MapToResponse()));
     }
+    
+    [HttpGet("{id:guid}")]
+    [ProducesResponseType(typeof(ExerciseResponse), StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetById(Guid id)
+    {
+        throw new NotImplementedException();
+    }
 
     [HttpPost]
-    [ProducesResponseType(typeof(ExerciseResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ExerciseResponse), StatusCodes.Status201Created)]
     public async Task<IActionResult> Create(CreateExerciseRequest request)
     {
-        var result = await _sender.Send(request.MapToCommand());
-        return result.Match(
-            authResult => Ok(authResult.MapToResponse()),
+        var exerciseResult = await _sender.Send(request.MapToCommand());
+        return exerciseResult.Match(
+            exerciseResult =>
+            {
+                var exerciseResponse = exerciseResult.MapToResponse();
+                return CreatedAtAction(
+                    nameof(GetById), 
+                    new { id = exerciseResponse.Id }, 
+                    exerciseResponse);
+            },
             errors => Problem(errors));
     }
 }
