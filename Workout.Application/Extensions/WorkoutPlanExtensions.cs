@@ -1,5 +1,4 @@
-using Workout.Application.Exercises.Common;
-using Workout.Application.WorkoutPlan.Common;
+using Workout.Application.WorkoutPlans.Common;
 using Workout.Domain.ExerciseAggregate;
 using Workout.Domain.ExerciseAggregate.ValueObjects;
 
@@ -27,11 +26,7 @@ public static class WorkoutPlanExtensions
             var workoutPlanExercises = section.ExerciseInstructions.Select(workoutPlanExercise =>
             {
                 var exercise = exercises.Single(e => e.Id == workoutPlanExercise.ExerciseId);
-                var exerciseData = new ExerciseResult(
-                    exercise.Id.Value,
-                    exercise.Name,
-                    exercise.Description,
-                    exercise.TargetedMuscles);
+                var exerciseData = exercise.MapToResult();
                 
                 return new ExerciseInstructionResult(
                     workoutPlanExercise.Id.Value,

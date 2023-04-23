@@ -6,57 +6,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f197b0c-b70e-405f-aefe-d0208d7390d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Api/Controllers/WorkoutPlansController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Api/Extensions/AuthenticationExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Api/Extensions/WorkoutPlanMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IExerciseRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IWorkoutPlanRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Common/ExerciseResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/Extensions/WorkoutPlanExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Common/WorkoutPlanResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Queries/GetWorkoutPlans/GetWorkoutPlansQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Queries/GetWorkoutPlans/GetWorkoutPlansQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Contracts/Exercise/ExerciseResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/ExerciseInstructionResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/WorkoutPlanResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/WorkoutPlanSectionResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Domain/WorkoutPlanAggregate/ValueObjects/ExerciseInstructionId.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/ExerciseRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/WorkoutPlanRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DinnerIdeas/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/efCoreCommonOptions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/efCoreDialogsState.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Api/Controllers/AuthenticationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Api/Controllers/AuthenticationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Api/Controllers/MenusController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/Authentication/Commands/Register/RegisterCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Authentication/Commands/Register/RegisterCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/Authentication/Common/AuthenticationResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Authentication/Common/AuthenticationResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/Authentication/Queries/Login/LoginQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Authentication/Queries/Login/LoginQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/Exercise/Exercise.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/ExerciseAggregate/Exercise.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/Exercise/ValueObjects/ExerciseId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/ExerciseAggregate/ValueObjects/ExerciseId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/User/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/UserAggregate/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/User/ValueObjects/UserId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/UserAggregate/ValueObjects/UserId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/WorkoutPlan/Entities/WorkoutPlanExercise.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/WorkoutPlanAggregate/Entities/ExerciseInstruction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/WorkoutPlan/Entities/WorkoutPlanSection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/WorkoutPlanAggregate/Entities/WorkoutPlanSection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/WorkoutPlan/ValueObjects/WorkoutPlanExerciseId.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/WorkoutPlan/ValueObjects/WorkoutPlanId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/WorkoutPlanAggregate/ValueObjects/WorkoutPlanId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/WorkoutPlan/ValueObjects/WorkoutPlanSectionId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/WorkoutPlanAggregate/ValueObjects/WorkoutPlanSectionId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Domain/WorkoutPlan/WorkoutPlan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Domain/WorkoutPlanAggregate/WorkoutPlan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Authentication/JwtTokenGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Authentication/JwtTokenGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Migrations/WorkoutDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Migrations/WorkoutDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Configurations/ExerciseConfigurations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Configurations/ExerciseConfigurations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Configurations/UserConfigurations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Configurations/UserConfigurations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Configurations/WorkoutPlanConfigurations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Configurations/WorkoutPlanConfigurations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/WorkoutDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/WorkoutDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Api/Controllers/ExercisesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Api/Extensions/ExerciseExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Api/Extensions/WorkoutPlanExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Commands/CreateExerciseCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Commands/CreateExerciseCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Queries/GetExercises/GetExercisesQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Application/Exercises/Queries/GetExercises/GetWorkoutPlansQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Application/Extensions/ExerciseExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Queries/GetWorkoutPlans/GetWorkoutPlansQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Contracts/Exercises/CreateExerciseRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlans/CreateWorkoutPlanRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlans/WorkoutPlanResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Workout/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Api/Controllers/WorkoutPlansController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Api/Controllers/WorkoutPlansController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Api/Extensions/WorkoutPlanMapper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IExerciseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Common/Interfaces/Persistence/IExerciseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Application/Extensions/WorkoutPlanExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/Extensions/WorkoutPlanExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Commands/CreateWorkoutPlan/CreateWorkoutPlanCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Common/WorkoutPlanResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Common/WorkoutPlanResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Queries/GetWorkoutPlans/GetWorkoutPlansQuery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Application/WorkoutPlan/Queries/GetWorkoutPlans/GetWorkoutPlansQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Application/WorkoutPlans/Queries/GetWorkoutPlans/GetWorkoutPlansQueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Contracts/Exercise/ExerciseResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Contracts/Exercises/ExerciseResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/ExerciseInstructionResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/WorkoutPlanResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Contracts/WorkoutPlan/WorkoutPlanSectionResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/ExerciseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Workout.Infrastructure/Persistence/Repositories/ExerciseRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,27 +55,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/jordywijman/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/jordywijman/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/jordywijman/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/jordywijman/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/Users/jordywijman/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/Users/jordywijman/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Workout.Api: https">
     <configuration name="Workout.Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Workout.Api/Workout.Api.csproj" />
@@ -140,7 +118,8 @@
       <option name="presentableId" value="Default" />
       <updated>1682187165600</updated>
       <workItem from="1682187171136" duration="7277000" />
-      <workItem from="1682195473330" duration="2920000" />
+      <workItem from="1682195473330" duration="3670000" />
+      <workItem from="1682281259183" duration="3451000" />
     </task>
     <servers />
   </component>

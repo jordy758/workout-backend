@@ -1,7 +1,6 @@
-namespace Workout.Contracts.Exercise;
+namespace Workout.Contracts.Exercises;
 
-public record ExerciseResponse(
-    Guid Id, 
+public record CreateExerciseRequest(
     string Name, 
     string Description, 
     IEnumerable<string> TargetedMuscles);

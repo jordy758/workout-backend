@@ -1,9 +1,8 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Workout.Api.Extensions;
-using Workout.Application.WorkoutPlan.Commands.CreateWorkoutPlan;
-using Workout.Application.WorkoutPlan.Queries.GetWorkoutPlans;
-using Workout.Contracts.WorkoutPlan;
+using Workout.Application.WorkoutPlans.Queries.GetWorkoutPlans;
+using Workout.Contracts.WorkoutPlans;
 
 namespace Workout.Api.Controllers;
 
@@ -28,9 +27,9 @@ public class WorkoutPlansController : ApiController
 
     [HttpPost]
     [ProducesResponseType(typeof(WorkoutPlanResponse), StatusCodes.Status200OK)]
-    public async Task<IActionResult> Create()
+    public async Task<IActionResult> Create(CreateWorkoutPlanRequest request)
     {
-        var response = await _sender.Send(new CreateWorkoutPlanCommand());
+        var response = await _sender.Send(request.MapToCommand());
         return response.Match(
             authResult => Ok(authResult.MapToResponse()),
             errors => Problem(errors));

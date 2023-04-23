@@ -1,6 +1,6 @@
 using Workout.Application.Exercises.Common;
 
-namespace Workout.Application.WorkoutPlan.Common;
+namespace Workout.Application.WorkoutPlans.Common;
 
 public record WorkoutPlanResult(
     Guid Id,

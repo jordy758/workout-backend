@@ -20,15 +20,29 @@ public class ExerciseRepository : IExerciseRepository
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task<Exercise> GetByIdAsync(ExerciseId id)
-    {
-        return await _dbContext.Exercises.SingleAsync(exercise => exercise.Id == id);
-    }
-
-    public async Task<IEnumerable<Exercise>> GetByIdsAsync(IEnumerable<ExerciseId> ids)
+    public async Task<IEnumerable<Exercise>> GetAllAsync()
     {
         return await _dbContext.Exercises
+            .ToListAsync();
+    }
+
+    public async Task<Exercise> GetByIdAsync(ExerciseId id)
+    {
+        return await _dbContext.Exercises
+            .SingleAsync(exercise => exercise.Id == id);
+    }
+
+    public async Task<IEnumerable<Exercise>> GetByIdsAsync(List<ExerciseId> ids)
+    {
+        var exercises = await _dbContext.Exercises
             .Where(exercise => ids.Contains(exercise.Id))
             .ToListAsync();
+
+        if (exercises.Count != ids.Count)
+        {
+            throw new ArgumentException($"Tried fetching {ids.Count} exercises by id, but only found {exercises.Count}");
+        }
+
+        return exercises;
     }
 }

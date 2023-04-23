@@ -1,9 +1,9 @@
 using MediatR;
 using Workout.Application.Common.Interfaces.Persistence;
 using Workout.Application.Extensions;
-using Workout.Application.WorkoutPlan.Common;
+using Workout.Application.WorkoutPlans.Common;
 
-namespace Workout.Application.WorkoutPlan.Queries.GetWorkoutPlans;
+namespace Workout.Application.WorkoutPlans.Queries.GetWorkoutPlans;
 
 public class GetWorkoutPlansQueryHandler : IRequestHandler<GetWorkoutPlansQuery, IEnumerable<WorkoutPlanResult>>
 {
@@ -21,7 +21,9 @@ public class GetWorkoutPlansQueryHandler : IRequestHandler<GetWorkoutPlansQuery,
         var workoutPlans = (await _workoutPlanRepository.GetAllAsync()).ToList();
 
         var exercises = await _exerciseRepository.GetByIdsAsync(
-            workoutPlans.SelectMany(workoutPlan => workoutPlan.GetAllExerciseIds()));
+            workoutPlans
+                .SelectMany(workoutPlan => workoutPlan.GetAllExerciseIds())
+                .ToList());
         
         return workoutPlans.Select(workoutPlan => workoutPlan.MapToResult(exercises));
     }
